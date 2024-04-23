@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:dev": "cp .env.development .env.local && next build",
+    "build:prod": "cp .env.production .env.local && next build"
   },
   "dependencies": {
     "react": "^18",
