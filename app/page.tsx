@@ -4,9 +4,9 @@ import Child1 from "./components/Child1";
 import Child2 from "./components/Child2";
 
 export default function Home() {
-  const [items, setItems] = useState<string[]>(["item 1", "item 2"]);
+  const [items, setItems] = useState<string[]>(["Item 1", "item 2"]);
   const addItem = () => {
-    const newItem = `item ${items.length + 1}`;
+    const newItem = `Item ${items.length + 1}`;
     setItems([...items, newItem]);
   };
 
